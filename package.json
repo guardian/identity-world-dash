@@ -1,0 +1,19 @@
+{
+  "name": "identity-stream-dash",
+  "version": "0.1.0",
+  "description": "Dashboard for live streamed data from identity",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Pamplin <james@jamespamplin.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "koa": "^1.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^1.9.0",
+    "eslint-config-idiomatic": "^0.3.0"
+  }
+}

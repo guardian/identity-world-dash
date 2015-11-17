@@ -1,0 +1,7 @@
+app:
+  build: .
+  ports:
+   - "3000"
+  volumes:
+    - .:/opt/app
+    - ~/.npm:/root/.npm
