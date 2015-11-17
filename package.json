@@ -11,9 +11,7 @@
   "author": "James Pamplin <james@jamespamplin.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "koa": "^1.1.2",
-    "koa-jade": "^2.0.1",
-    "koa-router": "^5.2.3",
+    "express": "^4.13.3",
     "ws": "^0.8.0"
   },
   "devDependencies": {

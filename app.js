@@ -1,28 +1,14 @@
-const koa = require( 'koa' ),
-  Router = require( 'koa-router' ),
-  Jade = require( 'koa-jade' ),
+const express = require( 'express' ),
+  app = express(),
+  ws = require( './lib/ws' );
 
-  ws = require( './lib/ws' ),
+app.use( express.static( 'public' ) );
 
-  app = koa(),
-  router = Router(),
-  jade = new Jade( {
-    viewPath: './views',
-    debug: false,
-    pretty: true
-  } );
+app.set( 'view engine', 'jade' );
 
-router.use( jade.middleware );
-
-router.get( '/', function* indexRoute( next ) {
-  this.render( 'index' );
-  yield next;
+app.get( '/', function indexRoute( req, res ) {
+  res.render( 'index', { title: 'Hey', message: 'Hello there!' } );
 } );
-
-
-app
-  .use( router.routes() )
-  .use( router.allowedMethods() );
 
 const server = app.listen( 3000 );
 
