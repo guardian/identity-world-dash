@@ -11,6 +11,7 @@
   "author": "James Pamplin <james@jamespamplin.com>",
   "license": "Apache-2.0",
   "dependencies": {
+    "browserify-express": "^0.1.4",
     "express": "^4.13.3",
     "ws": "^0.8.0"
   },

@@ -1,6 +1,16 @@
 const express = require( 'express' ),
   app = express(),
-  ws = require( './lib/ws' );
+  browserify = require( 'browserify-express' ),
+
+  ws = require( './lib/ws' ),
+
+  bundle = browserify( {
+    entry: __dirname + '/src/client-side/app.js',
+    mount: '/js/app.js',
+    bundle_opts: { debug: true }
+  } );
+
+app.use( bundle );
 
 app.use( express.static( 'public' ) );
 
