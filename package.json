@@ -2,17 +2,18 @@
   "name": "identity-stream-dash",
   "version": "0.1.0",
   "description": "Dashboard for live streamed data from identity",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "start-dev": "nodemon app.js",
+    "start-dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "James Pamplin <james@jamespamplin.com>",
   "license": "Apache-2.0",
   "dependencies": {
     "koa": "^1.1.2",
-    "koa-jade": "^2.0.1"
+    "koa-jade": "^2.0.1",
+    "koa-router": "^5.2.3"
   },
   "devDependencies": {
     "eslint": "^1.9.0",
