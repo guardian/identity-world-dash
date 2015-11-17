@@ -2,6 +2,8 @@ const koa = require( 'koa' ),
   Router = require( 'koa-router' ),
   Jade = require( 'koa-jade' ),
 
+  ws = require( './lib/ws' ),
+
   app = koa(),
   router = Router(),
   jade = new Jade( {
@@ -22,4 +24,6 @@ app
   .use( router.routes() )
   .use( router.allowedMethods() );
 
-app.listen( 3000 );
+const server = app.listen( 3000 );
+
+ws.init( server );
