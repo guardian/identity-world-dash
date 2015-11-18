@@ -1,5 +1,5 @@
 {
-  "name": "identity-stream-dash",
+  "name": "identity-world-dash",
   "version": "0.1.0",
   "description": "Dashboard for live streamed data from identity",
   "main": "app.js",
