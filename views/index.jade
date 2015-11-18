@@ -9,7 +9,8 @@ html(lang="en")
 
   body
     h1 Identity streams
-    #map
+    #map-wrapper
+      #map
     ul(data-bind="foreach: messages")
       li(data-bind="text: $data")
     script(src="/js/app.js")

@@ -50,7 +50,7 @@ var osm = L.tileLayer( osmUrl, { maxZoom: 18, attribution: osmAttrib } );
 var map = new L.Map( 'map', {
   layers: [ osm ],
   center: center,
-  zoom: 5 }
+  zoom: 6 }
 );
 
 var group = L.layerGroup();
