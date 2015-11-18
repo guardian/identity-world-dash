@@ -1,8 +1,11 @@
 app:
   build: .
   command: "npm run start-dev"
+  environment:
+    - AWS_PROFILE=identity-kinesis
   ports:
-   - "3000:3000"
+    - "3000:3000"
   volumes:
     - .:/app
+    - ~/.aws:/root/.aws
     - ~/.npm:/root/.npm
