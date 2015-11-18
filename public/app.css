@@ -1,0 +1,28 @@
+#map {
+  width: 90%;
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.leaflet-clickable {
+  animation: fadeInOut 3s ease 1;
+  opacity: 0;
+}
